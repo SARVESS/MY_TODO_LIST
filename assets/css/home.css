@@ -1,10 +1,105 @@
 body{
     margin: 0;
-    text-align: center;
     background-color:antiquewhite;
 }
 
-#page-heading{
-    font-family: sans-serif;
-
+#todo-app{
+    width: 50%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: auto;
 }
+
+#todo-heading{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+
+.about {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: rgb(17, 15, 15);
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  #categ-date-div{
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  #category-div {
+      width:48%;
+  }
+
+  select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ #date-div{
+     width: 48%;
+ }
+
+  input[type=date]{
+    width: 100%;
+    padding: 11px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;  
+  }
+
+  #add-button-div{
+      width: auto;
+      height: auto;
+      text-align: center;
+  }
+
+  #plus{
+      margin: 3px;
+  }
+  #add-button{
+      padding: 15px 20px;
+      background-color: rgb(131, 124, 124);
+      text-align: center;
+      border: none;
+      color: honeydew;
+      font-size:18px;
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* #trash{
+      margin: 3px;
+  }
+  #delete-button{
+    margin-left: 10px;  
+    padding: 15px 15px;
+    background-color:rgb(207, 32, 32);
+    text-align: center;
+    border: none;
+    color: honeydew;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 200px;
+} */

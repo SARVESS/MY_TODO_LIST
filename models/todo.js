@@ -5,12 +5,12 @@ const todoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    card: {
-        type: String
-    },
     date: {
         type: Date,
         required: true
+    },
+    card: {
+        type: String
     }
 }, {
     timestamps: true

@@ -9,10 +9,57 @@
         <link rel="stylesheet" href="/css/home.css">
     </head>
     <body>
-        <h1 id="page-heading">
-            <i class="fas fa-address-book"></i>
-            TODO APP
-        </h1>
+        <div id="todo-app">
+            <h1 id="todo-heading">
+                <i class="fas fa-clipboard-list"></i>
+                TODO APP
+            </h1>
+
+            <form action="/create" method="POST" id="form-1">
+                <label for="description" id="todo-description" class="about">DESCRIPTION</label>
+                <input type="text" id="description" name="name" placeholder="Your TODO.." required>
+                
+
+                <div id="categ-date-div">
+
+                <div id ="category-div">
+                <label for="category" id="todo-category" class="about">CATEGORY</label>
+                <br>
+                <select id="category" name="card">
+                  <option value="1" selected disabled> Choose a Category </option>
+                  <option value="personal">Personal</option>
+                  <option value="work">Work</option>
+                  <option value="cleaning">Cleaning</option>
+                  <option value="others">Others</option>
+                </select>
+                </div>
+
+                <div id="date-div">
+                <label for="due-date" id="todo-date" class="about">DUE DATE</label>
+                <br>
+                <input type="date" id="due-date" name="date" required>
+                </div>
+
+                </div>
+            
+
+                <div id="add-button-div">
+                <button id="add-button"> <i class="fas fa-plus" id="plus"></i> ADD TASK </button>
+                </div>
+              </form>
+                
+                <!-- <button id="delete-button"><i class="fas fa-trash" id="trash"></i> DELETE TASKS</button> -->
+              
+             <ul>
+                 
+             </ul>
+                
+
+        </div>
+        
+        
+        
+
 
         <script src="https://kit.fontawesome.com/41c8fb69c7.js" crossorigin="anonymous"></script> 
     </body>
