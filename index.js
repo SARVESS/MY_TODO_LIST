@@ -11,6 +11,8 @@ app.use(express.urlencoded());
 // to set static files
 app.use(express.static("./assets"));
 
+
+
 // use express router
 app.use('/', require('./routes'));
 

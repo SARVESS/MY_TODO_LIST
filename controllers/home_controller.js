@@ -23,10 +23,9 @@ module.exports.create = function(req, res){
         card: req.body.card
     }, function(err, newTODO){
         if(err){
-            console.log('error in creating a TODO item!');
+            console.log('Error in creating todo!');
             return;
         }
-        console.log('*******' , newTODO);
         return res.redirect('back');
     });
 }
@@ -40,7 +39,9 @@ module.exports.destroy = function(req, res){
         items=req.body[key];
     }
     TODO.remove({_id:{$in:items}},function(err, data){
-        if (err) throw err;
+        if (err){
+           throw err;
+        }
         res.json(data);
     });
 }
