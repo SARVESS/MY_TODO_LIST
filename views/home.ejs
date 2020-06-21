@@ -25,7 +25,7 @@
                 <div id ="category-div">
                 <label for="category" id="todo-category" class="about">CATEGORY</label>
                 <br>
-                <select id="category" name="card">
+                <select id="category" name="card" required>
                   <option value="1" selected disabled> Choose a Category </option>
                   <option value="personal">Personal</option>
                   <option value="work">Work</option>
@@ -48,19 +48,30 @@
                 </div>
               </form>
                 
-                <!-- <button id="delete-button"><i class="fas fa-trash" id="trash"></i> DELETE TASKS</button> -->
-              
-             <ul>
-                 
-             </ul>
-                
-
+            
+                <% for(let i of todo_list) {%>
+                       <div id="list-items-div">  
+                         <div id="list-checkbox">
+                           <input type="checkbox" id="<%= i._id %>" name="checkbox-name">
+                           <span id="list-description"><%= i.name %></span>
+                           <br>
+                           <i class="fas fa-calendar-alt" id="calendar"></i>
+                           <span id="list-date"> <%= i.date.toDateString()%></span>
+                         </div>
+                       
+                         <div id = "list-cat-div">
+                           <span> <%=i.card %> </span> 
+                         </div>
+  
+                       </div> 
+                <% } %>  
+               <div id="delete-button-div">
+                <button id="delete-button"><i class="fas fa-trash" id="trash"></i> DELETE TASKS</button>
+               </div>  
+            
         </div>
-        
-        
-        
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/home.js"></script>
         <script src="https://kit.fontawesome.com/41c8fb69c7.js" crossorigin="anonymous"></script> 
     </body>
 </html>

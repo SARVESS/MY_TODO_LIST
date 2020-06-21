@@ -32,8 +32,18 @@ module.exports.create = function(req, res){
 }
 
 
-// controller to delete TODO
+// controller to destroy TODO
 
+module.exports.destroy = function(req, res){
+    var items=[];
+    for(var key in req.body){
+        items=req.body[key];
+    }
+    TODO.remove({_id:{$in:items}},function(err, data){
+        if (err) throw err;
+        res.json(data);
+    });
+}
 
 
 //module.exports.actionName = function(req,res){}

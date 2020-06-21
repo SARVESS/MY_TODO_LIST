@@ -10,7 +10,8 @@ const todoSchema = new mongoose.Schema({
         required: true
     },
     card: {
-        type: String
+        type: String,
+        boolean:true
     }
 }, {
     timestamps: true
