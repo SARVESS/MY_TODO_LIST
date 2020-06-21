@@ -1,7 +1,7 @@
 
 
 // ajax call to delete tasks from list
-(function(){
+let deleteTODO = function(){
     $('#delete-button').on('click', function(){
     var item = new Array();
       if($('input:checkbox:checked').length>0){
@@ -21,13 +21,15 @@
         }
       });
     }
- })();
+ }
+
+ deleteTODO();
 
  // function to line through when checkbox is clicked
- (function(){
-   var checkboxes = $('#list-checkbox input');
-   var descriptions = $('#list-description');
-   var dates = $('#list-date');
+ let lineThrough = function(){
+   var checkboxes = $('.list-checkbox input');
+   var descriptions = $('.list-description');
+   var dates = $('.list-date');
    for(let i = 0;i < checkboxes.length;i++){
      $(checkboxes[i]).on('click', function(){
         if(checkboxes[i].checked){
@@ -39,4 +41,7 @@
         }
      });
    }
- })();
+ }
+
+ lineThrough();
+

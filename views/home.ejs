@@ -29,6 +29,7 @@
                 <select id="category" name="card" required>
                   <option value="1" selected disabled> Choose a Category </option>
                   <option value="personal">Personal</option>
+                  <option value="school">School</option>
                   <option value="work">Work</option>
                   <option value="cleaning">Cleaning</option>
                   <option value="others">Others</option>
@@ -51,17 +52,17 @@
                 
             
                 <% for(let i of todo_list) {%>
-                       <div id="list-items-div">  
-                         <div id="list-checkbox">
+                       <div class="list-items-div">  
+                         <div class="list-checkbox">
                            <input type="checkbox" id="<%= i._id %>" name="checkbox-name">
-                           <span id="list-description"><%= i.name %></span>
+                           <span class="list-description"><%= i.name %></span>
                            <br>
                            <i class="fas fa-calendar-alt" id="calendar"></i>
-                           <span id="list-date"> <%= i.date.toDateString()%></span>
+                           <span class="list-date"> <%= i.date.toDateString()%></span>
                          </div>
                        
-                         <div class = "list-cat-div">
-                           <div class="list-category"> <%=i.card %> </div> 
+                         <div class="list-cat-div">
+                             <%= i.card %> 
                          </div>
   
                        </div> 
@@ -74,6 +75,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="/js/home.js"></script>
+        <script src="/js/script.js"></script>
         <script src="https://kit.fontawesome.com/41c8fb69c7.js" crossorigin="anonymous"></script> 
     </body>
 </html>
