@@ -134,16 +134,16 @@ input[type=checkbox]{
     color: rgb(170, 153, 153);
 }
 
-.list-cat-div{
+.list-category{
     width: 100px;
     padding: 10px;
     text-align: center;
-    background-color: blue;
     margin-right: 40px;  
     margin-top: 10px;
     font-size: 15px;
+    background-color: blue;
     text-transform: uppercase;
-    color: honeydew;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
 }

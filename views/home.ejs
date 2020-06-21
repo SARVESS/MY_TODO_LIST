@@ -50,7 +50,7 @@
                 </div>
               </form>
                 
-            
+              
                 <% for(let i of todo_list) {%>
                        <div class="list-items-div">  
                          <div class="list-checkbox">
@@ -61,8 +61,8 @@
                            <span class="list-date"> <%= i.date.toDateString()%></span>
                          </div>
                        
-                         <div class="list-cat-div">
-                             <%= i.card %> 
+                         <div class="list-category">
+                              <%= i.card %> 
                          </div>
   
                        </div> 
@@ -74,6 +74,7 @@
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
         <script type="text/javascript" src="/js/home.js"></script>
         <script src="https://kit.fontawesome.com/41c8fb69c7.js" crossorigin="anonymous"></script> 
     </body>
