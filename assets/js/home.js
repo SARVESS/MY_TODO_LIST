@@ -1,21 +1,5 @@
 
-(function(){
-  let color = {
-    'PERSONAL' : {'background':'aquamarine'},
-    'School' : {'background':'blue'},
-    'Work' : {'background':'purple'},
-    'Other' : {'background':'navy'},
-    'personal' : {'background':'aquamarine'},
-    'school' : {'background':'blue'},
-    'work' : {'background':'purple'},
-    'other' : {'background':'navy'},
-}
 
-
-})();
-
-
-console.log("Hello");
 // ajax call to delete tasks from list
 (function(){
     $('#delete-button').on('click', function(){
